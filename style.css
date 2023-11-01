@@ -1,0 +1,278 @@
+*{
+    font-family:  Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+/*style du conteneur principal*/
+.container{
+	margin-right: auto;
+	margin-left: auto;
+	width: 210mm;
+	height: 297mm;
+	background: #fff;
+	box-shadow: 0 35px 35px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.content {
+    display: flex;
+}
+.container i{
+    margin-right: 10px;
+}
+.container i:hover{
+    cursor: pointer;
+    color: #00bfff;
+    transition: 0.7s;
+}
+/*style du conteneur de haut*/
+.top{
+    width: 100%;
+    display: flex;
+    height: 150px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)90%,rgba(0,0,0,0.5)90%),url(wd2.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.top .imgBox{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    margin: 5px -70px 0 80px;
+}
+img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.infos{
+    width: auto;
+    height: 100px;
+    color: #fff;
+    margin-left: 100px;
+    margin-top: -10px;
+    justify-content: center;
+}
+.infos span h1{
+    font-size: 50px;
+    margin-bottom: -10px;
+}
+.infos span h2{
+    color: #00bfff;
+}
+
+/*style conteneur gauche*/
+.left{
+    display: flex;
+	flex-direction: column;
+	align-content: center;
+	width: 300px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)80%,rgba(0,0,0,0.5)80%),url(60-.jpg);
+    margin-top: 0;
+    margin-right: auto;
+    color: #fff;
+}
+
+.left .about{
+    align-items: center;
+    text-align: justify;
+    width: 90%;
+}
+.about h3{
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    background:linear-gradient(90deg, #00bfff,#4169E1);
+    border-radius: 10px;
+    padding-top: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-left: 15px;
+}
+.about span{
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: justify;
+}
+.about ul li{
+    display: flex;
+    position: relative;
+}
+.about li{
+    padding-bottom: 5px;
+    list-style: none;
+}
+.left .social{
+   
+    align-items: center;
+    text-align: justify;
+    width: 90%;
+}
+.social h3{
+    text-align: center;
+    height: 30px;
+    margin-left: 15px;
+    width: 100%;
+    background:linear-gradient(90deg, #00bfff,#4169E1);
+    border-radius: 10px;
+    padding-top: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.social span{
+    color: #fff;
+    font-weight: bold;
+}
+.social li{
+    padding-bottom: 5px;
+    list-style: none;
+}
+.container h3:hover{
+    background: linear-gradient(90deg, #4169E1,#00bfff);
+}
+.left .skills{
+    text-align: justify;
+    width: 90%;
+}
+.skills h3{
+    text-align: center;
+    height: 30px;
+    margin-left: 15px;
+    width: 100%;
+    background:linear-gradient(90deg, #00bfff,#4169E1);
+    border-radius: 10px;
+    padding-top: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.skills span{
+    color: #fff;
+    font-weight: bold;
+}
+.skills li{
+    padding-bottom: 5px;
+    list-style: none;
+}
+.skills .percent{
+    position: relative;
+	width: 50%;
+	height: 8px;
+	background: #fff;
+	display: inline-block;
+	margin-top: 5px;
+	border-radius: 5px;
+}
+.skills .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background:#00bfff;
+}
+.skills ul li{
+	display: flex;
+	justify-content: space-between;
+    position: relative;
+}
+.left .lang{
+    align-items: center;
+    text-align: justify;
+    width: 90%;
+}
+.lang h3{
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    background:linear-gradient(90deg, #00bfff,#4169E1);
+    border-radius: 10px;
+    padding-top: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-left: 15px;
+}
+.lang span{
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+}
+.lang li{
+    padding-bottom: 5px;
+    list-style: none
+    ;
+}
+
+/*Style du coté gauche*/
+.container .right{
+    width: 490px;
+    position: relative;
+	align-content: center;
+    margin-top: 0;
+    margin-left: auto;
+    padding: 0 10px;
+}
+.right h3{
+    text-align: center;
+    height: 40px;
+    background:linear-gradient(90deg, #00bfff,#4169E1);
+    border-radius: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-top: 5px;
+}
+.card{
+    text-align: justify;
+    background: #F8F8FF;
+    margin-top: -10px;
+    border-radius: 10px;
+}
+.card .box{
+	display: flex;
+    justify-content: space-between;
+}
+ .card .box h5{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #4169E1;
+}
+ .card p{
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
